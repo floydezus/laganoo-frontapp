@@ -24,4 +24,4 @@
 - `npm run build` - build
 - `npm run deploy` - deploy at surge.sh
 
-It's app for first part and it's containing in the branch "main". If you want to see other solutions, please change the branch.
+It's app for first part and it's containing in the branch "master". If you want to see other solutions, please change the branch.
