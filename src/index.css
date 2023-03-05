@@ -1,0 +1,133 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;800&display=swap');
+
+@layer base {
+  .bg-plan {
+    background-color: transparent;
+    position: relative;
+    background-image: url('./assets/img/bg-bats.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .bg-pale {
+    background: rgba(229, 229, 229, 0.38);
+  }
+  .dot-marker:before {
+    content: '·';
+    font-size: 30px;
+    vertical-align: middle;
+    margin-right: 0.75rem;
+    line-height: 20px;
+  }
+  .line {
+    position: relative;
+  }
+  .line::after {
+    position: absolute;
+    content: '';
+    top: 37px;
+    left: 0;
+    height: 1px;
+    width: 225px;
+    background: black;
+  }
+  .crossed-price {
+    position: relative;
+  }
+  .crossed-price::before {
+    position: absolute;
+    content: '';
+    height: 8px;
+    border-radius: 2px;
+    width: 110%;
+    left: -2%;
+    top: 40%;
+
+    background: #ef3d30;
+    transform: rotate(-7.83deg);
+  }
+  .shadow-testimonials {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.45));
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+  }
+  .icon {
+    width: 100%;
+    height: 100%;
+  }
+
+  .bg-decoration {
+    position: relative;
+    background-color: transparent;
+  }
+
+  .bg-decoration::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    background: url('./assets/img/bg-bats.png');
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
+  .bg-hero {
+    background-color: black;
+    position: relative;
+    background-image: url('./assets/img/bg-hero.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    height: 542px;
+  }
+
+  .bg-info {
+    position: relative;
+    background-color: black;
+    position: relative;
+    background-image: url('./assets/img/bg-cakes.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    height: 412px;
+  }
+
+  .bg-info::after {
+    position: absolute;
+    content: '';
+    left: -1%;
+    bottom: -1%;
+    width: 100%;
+    background-image: url('./assets/img/trick-or-treat-light.svg');
+    height: 195px;
+    background-repeat: no-repeat;
+    z-index: 2;
+  }
+
+  .text-shadow {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.45);
+  }
+
+  .select-container {
+    width: 142px;
+    background-color: rgba(196, 196, 196, 0.17);
+    border: 1px solid #c4c4c4;
+    padding-top: 3px;
+    padding-bottom: 1px;
+  }
+  body {
+    font-family: 'Montserrat', sans-serif !important;
+    color: #010101;
+    line-height: 20px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    .bg-info::after {
+      visibility: hidden;
+    }
+  }
+}
