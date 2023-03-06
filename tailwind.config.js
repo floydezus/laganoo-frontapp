@@ -13,10 +13,6 @@ module.exports = {
       backgroundPosition: {
         'center-top': 'center top',
       },
-      backgroundImage: {
-        'modal-desktop': "url('./assets/popups/popup-desktop.png')",
-        'modal-mobile': "url('./assets/popups/popup-mobile.png')",
-      },
       gap: {
         '6px': '6px',
         '14px': '14px',
@@ -25,7 +21,10 @@ module.exports = {
       colors: {
         primary: '#010101', // black
         secondary: '#E2E8ED', // gray
-        accent: '#FEC40E', // yellow
+        accent: '#FEC40E', // yellow,
+        danger: '#FF3A44', // red
+        info: '#0185FE', // blue
+        border: '#CACCCD',
       },
       boxShadow: {
         std: '0px 4px 4px rgba(133, 133, 133, 0.45)',
@@ -59,6 +58,7 @@ module.exports = {
         '6xl': '1200px',
       },
       width: {
+        300: '300px',
         '350px': '350px',
       },
     },

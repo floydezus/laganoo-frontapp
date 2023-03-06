@@ -1,14 +1,12 @@
 import React from 'react';
-import { Footer } from '../components';
 import Navigation from './Navigation';
 
 function Layout({ children }) {
   return (
-    <>
+    <div className='w-full grid grid-cols-[300px,1fr]'>
       <Navigation />
-      <main className='pt-16 lg:pt-20'>{children}</main>
-      <Footer />
-    </>
+      <main className=''>{children}</main>
+    </div>
   );
 }
 

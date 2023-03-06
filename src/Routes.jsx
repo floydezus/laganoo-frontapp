@@ -1,13 +1,17 @@
-import { Routes as LibraryRoutes, Route } from "react-router-dom";
-import React from "react";
-import Home from "./screens/Home";
-import OffersPage from "./screens/OffersPage";
+import { Routes as LibraryRoutes, Route } from 'react-router-dom';
+import React from 'react';
+import TeamPage from './screens/TeamPage';
+import HelpPage from './screens/HelpPage';
+import CommunityPage from './screens/CommunityPage';
 
 function Routes() {
   return (
     <LibraryRoutes>
-      <Route path='/' element={<Home />} />
-      <Route path='/offers' element={<OffersPage />} />
+      <Route path='/' element={<TeamPage />} />
+      <Route path='/team' element={<TeamPage />} />
+      <Route path='/help' element={<HelpPage />} />
+      <Route path='/community' element={<CommunityPage />} />
+      <Route path='*' element={<CommunityPage />} />
     </LibraryRoutes>
   );
 }
